@@ -1,3 +1,13 @@
+# This is a clone of jesseweisberg/moveo_ros but will be 6DOF version (maybe if i get it up and running) 
+
+Found some improvements for the Moveo (endstops, some extra bearings and a 6th DOF ("rotating hand")) on hackaday ...(will try to find the reference again)
+
+should run on 1x arduino  for all motors but the base. and 1x cnc shield for the two motors at the base. will try to edit the code to work on two arduinos (i think that should work since the motion doesnt have to be 100% synchronous)... we will see
+
+using ros melodic
+
+
+//Original Text
 # moveo_ros
 ROS packages that can be used to plan and execute motion trajectories for the BCN3D Moveo robotic arm in simulation and real-life.
 ### [Video Demo Here!](https://youtu.be/2RcTTqs17O8)
