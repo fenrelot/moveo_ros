@@ -1,6 +1,6 @@
 # This is a clone of jesseweisberg/moveo_ros but will be 6DOF version (maybe if i get it up and running) 
 
-Found some improvements for the Moveo (endstops, some extra bearings and a 6th DOF ("rotating hand")) on hackaday ...(will try to find the reference again)
+Found some improvements for the Moveo (endstops, some extra bearings and a 6th DOF ("rotating hand")) on thingiverse ! https://www.thingiverse.com/thing:2146252 by labala
 
 should run on 1x arduino mega 2560 with ramps 1.4 for all motors but the base. and 1x arduino uno with cnc shield for the two motors at the base . will try to edit the code to work on two arduinos (i think that should work since the motion doesnt have to be 100% synchronous)... we will see
 
