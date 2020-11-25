@@ -10,6 +10,17 @@ There is an Arduino CNC shield attached to RAMPS AUX2 port, for the two Steppers
 
 using ros melodic
 
+# Installation of stuff
+1. install Ubuntu 16.04 amd64 on ssd
+2. install ROS like in http://wiki.ros.org/kinetic/Installation/Ubuntu
+	install fill desktop version (sudo apt-get install ros-kinetic-desktop-full)
+	install catkin !!! and make a workspace which works
+3. install moveit https://moveit.ros.org/install/ with  (sudo apt-get install ros-kinetic-moveit) and install also moveit visual tools https://github.com/ros-planning/moveit_visual_tools via ( sudo apt-get install ros-kinetic-moveit-visual-tools )
+
+4. follow the instructions from jesse weisberg (original description further down)
+
+moveit rviz should work! then we need rosserial !!!...to be continued
+
 
 //Original Text
 # moveo_ros
