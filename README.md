@@ -8,7 +8,7 @@ Changes to the original code are:
 Stepper Z is now for Joint 6 !!!
 There is an Arduino CNC shield attached to RAMPS AUX2 port, for the two Steppers which control the Joint 2 (nema23)
 
-using ros melodic
+using ros Kinetic ! (because code was made for kinetic...if everything is running i will try to port to Neotic (moveit visual tools not yet running on neotic ?))
 
 # Installation of stuff
 1. install Ubuntu 16.04 amd64 on ssd
@@ -19,7 +19,24 @@ using ros melodic
 
 4. follow the instructions from jesse weisberg (original description further down)
 
-moveit rviz should work! then we need rosserial !!!...to be continued
+moveit rviz should work! then we need rosserial !!!
+
+# Update
+everything seems to run at the moment, and my robot is working (no bearings yet...but everything moves)
+rostopic pub joint_steps moveo_moveit/ArmJointState <Joint1 Joint2 Joint3 Joint4 Joint5 0> (needs to be put like rostopic pub joint_steps moveo_moveit/ArmJointState 100 100 100 100 100 0 )
+	- Change "Joint1, Joint2, etc." to the number of steps you want each joint to move.
+	
+this worked! but value 0 seems to be the starting value for all joints, and thats not cool because putting negative values seems to not work!... soo what can we do instead? 
+
+fortunately the code of jesse all in all seems to have been written actually for 6 axis robot...which is nice.
+
+. Limits in the moveit config seem to be very much off (foind that from the moveit config tutorial). also im using different microstepping settings...and im gona use a planetary gearbox 1:5 for the joint 4 (direct drive is really not working well)
+
+(also i found that controlling the endeffector with xbox360 controller is very laggy but cpu is idling when starting joystick node so there seems to be other issues with that) 
+
+next up will be updating the urdf files with the 6th axis
+
+... to be continued
 
 
 //Original Text
