@@ -36,7 +36,11 @@ fortunately the code of jesse all in all seems to have been written actually for
 
 next up will be updating the urdf files with the 6th axis
 
-... to be continued
+# UPdate 2
+so there is a urdf file generator for solidworks !!! ...how convenient...i guess everybody used that.
+...but that program is way to expensive for this project.... so fortunately i found https://github.com/andresaraque/centauri6dof <- some guys who also used the 6 axis mod of the moveo and exported the kinematic model. they also have some gui which is fun to play with (already tested and seems to work)
+
+...next up planetary gearbox für joint 4 and playing around with the code.... will also try if this centauri6dof code runs on newer ROS versions // 16.04 is tooo old
 
 
 //Original Text
